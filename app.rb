@@ -5,11 +5,11 @@ class App < Sinatra::Base
     erb :newteam
   end
   get '/team' do
-    erb :newteam
+    erb :team
   end
   post '/team' do
     @name = params["name"]
-    
+
     erb :team
   end
 end
